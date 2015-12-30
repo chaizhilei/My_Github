@@ -1,0 +1,158 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   ../.gitignore
+#	new file:   ../elasticsearch
+#	modified:   .classpath
+#	modified:   .settings/org.eclipse.core.resources.prefs
+#	new file:   logs/springtransaction.log
+#	new file:   logs/springtransaction.log.2015-10-29
+#	modified:   pom.xml
+#	modified:   src/main/java/com/spring/demo1/AccountServiceImpl.java
+#	new file:   src/main/java/com/spring/demo2/AccountController.java
+#	modified:   src/main/java/com/spring/demo2/AccountService.java
+#	modified:   src/main/java/com/spring/demo2/AccountServiceImpl.java
+#	new file:   src/main/java/com/spring/demo4/HelloWorldAspect.java
+#	new file:   src/main/java/com/spring/demo4/HelloWorldServiceImpl.java
+#	new file:   src/main/java/com/spring/demo4/IHelloWordService.java
+#	new file:   src/main/java/com/spring/demo4/User.java
+#	new file:   src/main/java/com/spring/event/AccountEvent.java
+#	new file:   src/main/java/com/spring/event/AccountEventListener.java
+#	new file:   src/main/java/com/spring/event/CoreEventDispatcher.java
+#	new file:   src/main/java/com/spring/event/EventListener.java
+#	new file:   src/main/resources/log4j.properties
+#	modified:   src/main/resources/spring.xml
+#	modified:   src/main/resources/spring2.xml
+#	new file:   src/main/resources/spring4.xml
+#	new file:   src/main/resources/spring5.xml
+#	new file:   src/main/webapp/META-INF/context.xml
+#	new file:   src/main/webapp/WEB-INF/web.xml
+#	new file:   src/main/webapp/index.jsp
+#	new file:   src/main/webapp/js/jquery-1.7.2.js
+#	new file:   src/main/webapp/lhgdialog/lhgcore.lhgdialog.min.js
+#	new file:   src/main/webapp/lhgdialog/lhgdialog.js
+#	new file:   src/main/webapp/lhgdialog/lhgdialog.min.js
+#	new file:   "src/main/webapp/lhgdialog/lhgdialog\346\226\207\344\273\266\345\244\271\344\270\255\346\226\207\344\273\266\347\233\256\345\275\225\347\273\223\346\236\204\350\257\264\346\230\216.txt"
+#	new file:   src/main/webapp/lhgdialog/skins/blue.css
+#	new file:   src/main/webapp/lhgdialog/skins/blue/blue_s.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/blue_s2.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/blue_titbtn.gif
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_b.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_l.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_lb.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_lt.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_lt2.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_r.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_rb.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_rt.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_rt2.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_t.png
+#	new file:   src/main/webapp/lhgdialog/skins/blue/ie6/ui_t2.png
+#	new file:   src/main/webapp/lhgdialog/skins/chrome.css
+#	new file:   src/main/webapp/lhgdialog/skins/chrome/chrome_s.gif
+#	new file:   src/main/webapp/lhgdialog/skins/chrome/chrome_s2.gif
+#	new file:   src/main/webapp/lhgdialog/skins/chrome/chrome_s3.gif
+#	new file:   src/main/webapp/lhgdialog/skins/default.css
+#	new file:   src/main/webapp/lhgdialog/skins/discuz.css
+#	new file:   src/main/webapp/lhgdialog/skins/iblack.css
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/iblack_s.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/iblack_s2.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_b.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_l.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_lb.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_lt.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_lt2.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_r.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_rb.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_rt.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_rt2.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_t.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblack/ie6/ui_t2.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue.css
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/iblue_s.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/iblue_s2.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_b.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_l.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_lb.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_lt.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_lt2.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_r.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_rb.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_rt.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_rt2.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_t.png
+#	new file:   src/main/webapp/lhgdialog/skins/iblue/ie6/ui_t2.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/32X32/fail.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/32X32/hits.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/32X32/i.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/32X32/succ.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/alert.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/confirm.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/discuz_bg.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/error.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/face-sad.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/face-smile.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/gb_tip_layer.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/gb_tip_layer_ie6.png
+#	new file:   src/main/webapp/lhgdialog/skins/icons/lhgcore.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/loading.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/prompt.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/success.gif
+#	new file:   src/main/webapp/lhgdialog/skins/icons/tips.gif
+#	new file:   src/main/webapp/lhgdialog/skins/idialog.css
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/idialog_s.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/idialog_s2.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_b.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_close.hover.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_close.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_l.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_lb.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_lt.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_r.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_rb.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_rt.png
+#	new file:   src/main/webapp/lhgdialog/skins/idialog/ie6/ui_t.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen.css
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_b.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_l.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_lb.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_lt.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_r.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_rb.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_rt.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/ie6/ui_t.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/igreen_s.png
+#	new file:   src/main/webapp/lhgdialog/skins/igreen/igreen_s2.png
+#	new file:   src/main/webapp/lhgdialog/skins/jtop.css
+#	new file:   src/main/webapp/lhgdialog/skins/mac.css
+#	modified:   src/test/java/springtransaction/TestDemo2.java
+#	new file:   src/test/java/springtransaction/TestDemo4.java
+#	new file:   src/test/java/springtransaction/TestDemo5.java
+#	new file:   src/test/java/springtransaction/TestDemo6.java
+#	modified:   target/classes/com/spring/demo1/AccountServiceImpl.class
+#	new file:   target/classes/com/spring/demo2/AccountController.class
+#	modified:   target/classes/com/spring/demo2/AccountService.class
+#	modified:   target/classes/com/spring/demo2/AccountServiceImpl.class
+#	new file:   target/classes/com/spring/demo4/HelloWorldAspect.class
+#	new file:   target/classes/com/spring/demo4/HelloWorldServiceImpl.class
+#	new file:   target/classes/com/spring/demo4/IHelloWordService.class
+#	new file:   target/classes/com/spring/demo4/User.class
+#	new file:   target/classes/com/spring/event/AccountEvent.class
+#	new file:   target/classes/com/spring/event/AccountEventListener.class
+#	new file:   target/classes/com/spring/event/CoreEventDispatcher.class
+#	new file:   target/classes/com/spring/event/EventListener.class
+#	new file:   target/classes/log4j.properties
+#	modified:   target/classes/spring.xml
+#	modified:   target/classes/spring2.xml
+#	new file:   target/classes/spring4.xml
+#	new file:   target/classes/spring5.xml
+#	modified:   target/test-classes/springtransaction/TestDemo2.class
+#	new file:   target/test-classes/springtransaction/TestDemo4.class
+#	new file:   target/test-classes/springtransaction/TestDemo5.class
+#	new file:   target/test-classes/springtransaction/TestDemo6.class
+#
+
