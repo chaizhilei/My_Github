@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding= "UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -41,23 +40,37 @@
 	<!-- 配置事务的通知（事务的增强） -->
 	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
-			<!-- 
-				propagation   :事务传播行为
-				isolation     :事务隔离级别
-				read-onle     :只读
-				rollback-for  :发生哪些异常回滚
-				no-rollback-for:发生哪些异常不回滚
-				timeout       :过期信息		
-			 -->
+			<!-- propagation :事务传播行为
+			   isolation :事务隔离级别
+			  read-onle :只读 
+			  rollback-for:发生哪些异常回滚 
+			  no-rollback-for:发生哪些异常不回滚 
+			  timeout :过期信息 -->
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="create*" propagation="REQUIRED" />
+			<tx:method name="insert*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="merge*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="remove*" propagation="REQUIRED" />
+			<tx:method name="put*" propagation="REQUIRED" />
+			<tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="count*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="find*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="list*" propagation="SUPPORTS" read-only="true" />
+			<tx:method name="*" propagation="SUPPORTS" read-only="true" />
 			<tx:method name="transfer" propagation="REQUIRED" />
+
 		</tx:attributes>
 	</tx:advice>
 	<!-- 配置aop的切面 -->
 	<aop:config>
 		<!-- 配置切入点 -->
-		<aop:pointcut expression="execution(* com.spring.demo1.AccountService+.*(..))" id="pointcut1" />
+		<aop:pointcut expression="execution(* com.spring.demo1.AccountService+.*(..))"
+			id="pointcut1" />
 		<!-- 配置切面 -->
-		<aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut1"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut1" />
 	</aop:config>
-	
+
 </beans>

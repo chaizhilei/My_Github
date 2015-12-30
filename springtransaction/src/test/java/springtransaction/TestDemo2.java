@@ -17,7 +17,20 @@ public class TestDemo2 {
 
 	@Test
 	public void demo1() {
-		accountService.transfer("aaa", "bbb", 200d);
+		backAccount();
+//		accountService.transfer("aaa", "bbb", 200d);
+	}
+	
+	public void backAccount(){
+		try {
+			accountService.transfer("aaa", "bbb", 200d);
+			accountService.transfer("aaa", "ccc", 200d);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		int i=1/0;
+	
 	}
 
 }

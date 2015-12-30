@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <Valve className="cn.com.gome.webstudy.src.RedisSessionHandlerValve" />
+  <Manager className="cn.com.gome.webstudy.src.RedisSessionManager"
+           host="110.128.11.138"
+           port="7777"
+           database="0"
+           maxInactiveInterval="60" />
+</Context>

@@ -1,0 +1,651 @@
+[INFO ][20151230 16:49:36,926][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 16:49:37,270][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 16:49:37 CST 2015]; root of context hierarchy
+[INFO ][20151230 16:49:37,513][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:49:38,887][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:49:39,049][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12ed858: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 16:49:39,282][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 16:49:41,188][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 16:49:41,703][ContextLoader:313] Root WebApplicationContext: initialization completed in 4734 ms
+[INFO ][20151230 16:49:41,978][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 16:49:41,984][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 16:49:41 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 16:49:41,985][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:49:42,072][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:49:42,087][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1bab7b2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@12ed858
+[INFO ][20151230 16:49:42,273][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 16:49:42,273][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 16:49:42,273][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 16:49:42,894][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 916 ms
+[INFO ][20151230 16:50:51,029][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v61wsnvemv1g|1dc68a2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v61wsnvemv1g|1dc68a2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151230 16:50:51,794][AccountServiceImpl:50] 出错了
+java.lang.NullPointerException
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151230 16:52:11,806][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 16:52:11,996][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 16:52:11 CST 2015]; root of context hierarchy
+[INFO ][20151230 16:52:12,129][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:52:12,948][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:52:13,088][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b868b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 16:52:13,471][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 16:52:14,191][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 16:52:14,562][ContextLoader:313] Root WebApplicationContext: initialization completed in 2744 ms
+[INFO ][20151230 16:52:14,714][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 16:52:14,721][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 16:52:14 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 16:52:14,724][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:52:14,819][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:52:14,833][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1207d43: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6b868b
+[INFO ][20151230 16:52:15,046][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 16:52:15,046][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 16:52:15,047][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 16:52:15,444][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 729 ms
+[INFO ][20151230 16:52:40,778][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v657qkmmwgub|1578fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v657qkmmwgub|1578fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151230 16:54:45,854][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 16:54:46,001][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 16:54:45 CST 2015]; root of context hierarchy
+[INFO ][20151230 16:54:46,104][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:54:46,755][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:54:46,830][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c7a22a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 16:54:46,956][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 16:54:47,649][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 16:54:48,161][ContextLoader:313] Root WebApplicationContext: initialization completed in 2303 ms
+[INFO ][20151230 16:54:48,309][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 16:54:48,314][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 16:54:48 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 16:54:48,315][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:54:48,404][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:54:48,419][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d532ee: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c7a22a
+[INFO ][20151230 16:54:48,571][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 16:54:48,571][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 16:54:48,572][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 16:54:48,837][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 528 ms
+[INFO ][20151230 16:54:52,105][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v68i5g8wlmk5|1ce3058, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v68i5g8wlmk5|1ce3058, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151230 16:54:52,647][AccountServiceImpl:50] 出错了
+java.lang.NullPointerException
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151230 16:55:50,201][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 16:55:50,369][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 16:55:50 CST 2015]; root of context hierarchy
+[INFO ][20151230 16:55:50,482][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:55:51,221][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:55:51,319][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2a1389: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 16:55:51,486][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 16:55:52,158][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 16:55:52,804][ContextLoader:313] Root WebApplicationContext: initialization completed in 2596 ms
+[INFO ][20151230 16:55:52,953][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 16:55:52,961][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 16:55:52 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 16:55:52,963][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 16:55:53,063][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 16:55:53,079][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1037315: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@2a1389
+[INFO ][20151230 16:55:53,310][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 16:55:53,310][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 16:55:53,311][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 16:55:53,652][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 698 ms
+[INFO ][20151230 16:56:08,852][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v69vyc1q1g8si|dafd61, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v69vyc1q1g8si|dafd61, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151230 17:00:31,594][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:00:31,739][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:00:31 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:00:31,836][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:00:32,479][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:00:32,552][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e3a949: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDaoImpl,accountServiceImpl,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:00:32,874][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e3a949: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDaoImpl,accountServiceImpl,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20151230 17:00:32,876][ContextLoader:319] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoImpl' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoImpl' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoImpl' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoImpl' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 36 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoImpl' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 38 more
+Caused by: java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.jdbc.core.support.JdbcDaoSupport.checkDaoConfig(JdbcDaoSupport.java:112)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	... 48 more
+[INFO ][20151230 17:01:37,845][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:01:37,989][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:01:37 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:01:38,085][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:01:38,436][DefaultListableBeanFactory:665] Overriding bean definition for bean 'accountDao': replacing [Generic bean: class [com.spring.demo2.AccountDaoImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]] with [Generic bean: class [com.spring.demo2.AccountDaoImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring2.xml]]
+[INFO ][20151230 17:01:38,706][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:01:38,779][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17f1f92: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDao,accountServiceImpl,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:01:39,153][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 17:01:39,818][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 17:01:40,018][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17f1f92: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDao,accountServiceImpl,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20151230 17:01:40,021][ContextLoader:319] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService' defined in class path resource [spring2.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'accountDao' of bean class [com.spring.demo2.AccountServiceImpl]: Bean property 'accountDao' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService' defined in class path resource [spring2.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'accountDao' of bean class [com.spring.demo2.AccountServiceImpl]: Bean property 'accountDao' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService' defined in class path resource [spring2.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'accountDao' of bean class [com.spring.demo2.AccountServiceImpl]: Bean property 'accountDao' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 25 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'accountDao' of bean class [com.spring.demo2.AccountServiceImpl]: Bean property 'accountDao' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1042)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:902)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1420)
+	... 36 more
+[INFO ][20151230 17:04:17,842][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:04:17,987][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:04:17 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:04:18,083][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:04:18,695][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:04:18,764][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e3a949: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDao,accountServiceImpl,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:04:19,075][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e3a949: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDao,accountServiceImpl,accountEventListener,coreEventDispatcher,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20151230 17:04:19,077][ContextLoader:319] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountDao com.spring.demo2.AccountServiceImpl.accountDao; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 36 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDao' defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1482)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 38 more
+Caused by: java.lang.IllegalArgumentException: 'dataSource' or 'jdbcTemplate' is required
+	at org.springframework.jdbc.core.support.JdbcDaoSupport.checkDaoConfig(JdbcDaoSupport.java:112)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	... 48 more
+[INFO ][20151230 17:04:42,542][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:04:42,665][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:04:42 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:04:42,753][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:04:42,971][DefaultListableBeanFactory:665] Overriding bean definition for bean 'accountDao': replacing [Generic bean: class [com.spring.demo2.AccountDaoImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\WORK_SEARCH\springtransaction\target\classes\com\spring\demo2\AccountDaoImpl.class]] with [Generic bean: class [com.spring.demo2.AccountDaoImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring2.xml]]
+[INFO ][20151230 17:04:43,183][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:04:43,238][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28adfb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDao,accountServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:04:43,288][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28adfb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,accountDao,accountServiceImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20151230 17:04:43,289][ContextLoader:319] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.event.CoreEventDispatcher com.spring.demo2.AccountServiceImpl.coreEventDispatcher; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.spring.event.CoreEventDispatcher] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap$3.filesChanged(Bootstrap.java:465)
+	at org.mortbay.util.Scanner.reportBulkChanges(Scanner.java:486)
+	at org.mortbay.util.Scanner.reportDifferences(Scanner.java:352)
+	at org.mortbay.util.Scanner.scan(Scanner.java:280)
+	at org.mortbay.util.Scanner$1.run(Scanner.java:232)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.demo2.AccountService com.spring.demo2.AccountController.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.event.CoreEventDispatcher com.spring.demo2.AccountServiceImpl.coreEventDispatcher; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.spring.event.CoreEventDispatcher] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.event.CoreEventDispatcher com.spring.demo2.AccountServiceImpl.coreEventDispatcher; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.spring.event.CoreEventDispatcher] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 28 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.spring.event.CoreEventDispatcher com.spring.demo2.AccountServiceImpl.coreEventDispatcher; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.spring.event.CoreEventDispatcher] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285)
+	... 39 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.spring.event.CoreEventDispatcher] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:988)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:858)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:770)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486)
+	... 41 more
+[INFO ][20151230 17:10:29,004][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:10:29,142][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:10:29 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:10:29,233][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:10:29,807][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:10:29,876][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c7a22a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:10:29,982][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 17:10:30,634][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 17:10:30,875][ContextLoader:313] Root WebApplicationContext: initialization completed in 1867 ms
+[INFO ][20151230 17:10:30,971][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 17:10:30,977][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:10:30 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:10:30,978][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:10:31,062][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:10:31,075][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8362dc: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1c7a22a
+[INFO ][20151230 17:10:31,207][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 17:10:31,207][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 17:10:31,208][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 17:10:31,445][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 474 ms
+[INFO ][20151230 17:10:35,774][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v6spsi5d7r9x|5c9cd8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v6spsi5d7r9x|5c9cd8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151230 17:10:36,367][AccountServiceImpl:54] 出错了
+java.lang.NullPointerException
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151230 17:11:41,733][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:11:41,870][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:11:41 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:11:41,961][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:11:42,567][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:11:42,633][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fb0fc2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,com.spring.event.CoreEventDispatcher#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:11:42,738][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 17:11:43,364][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 17:11:43,713][ContextLoader:313] Root WebApplicationContext: initialization completed in 1977 ms
+[INFO ][20151230 17:11:43,808][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 17:11:43,813][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:11:43 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:11:43,815][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:11:43,897][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:11:43,910][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@57ba9e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,com.spring.event.CoreEventDispatcher#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1fb0fc2
+[INFO ][20151230 17:11:44,055][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 17:11:44,055][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 17:11:44,056][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 17:11:44,290][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 481 ms
+[INFO ][20151230 17:11:49,869][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v6u9xi121fnpc|834237, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v6u9xi121fnpc|834237, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151230 17:11:50,513][AccountServiceImpl:54] 出错了
+java.lang.NullPointerException
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151230 17:12:21,125][AbstractApplicationContext:1042] Closing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:11:43 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:12:21,127][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@57ba9e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,com.spring.event.CoreEventDispatcher#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1fb0fc2
+[INFO ][20151230 17:12:21,145][AbstractApplicationContext:1042] Closing Root WebApplicationContext: startup date [Wed Dec 30 17:11:41 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:12:21,146][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fb0fc2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,com.spring.event.CoreEventDispatcher#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:12:21,444][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:12:21,558][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:12:21 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:12:21,636][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:12:22,049][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:12:22,103][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@db4077: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,coreEventDispatcher,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:12:22,191][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 17:12:22,247][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[WARN ][20151230 17:12:22,249][ActiveManagementCoordinator:77] A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[INFO ][20151230 17:12:22,488][ContextLoader:313] Root WebApplicationContext: initialization completed in 1040 ms
+[INFO ][20151230 17:12:22,534][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 17:12:22,540][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:12:22 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:12:22,541][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:12:22,612][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:12:22,624][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13f2442: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,coreEventDispatcher,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@db4077
+[INFO ][20151230 17:12:22,754][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 17:12:22,755][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 17:12:22,755][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 17:12:22,894][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 359 ms
+[INFO ][20151230 17:12:41,128][AbstractApplicationContext:1042] Closing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:12:22 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:12:41,129][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13f2442: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,coreEventDispatcher,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@db4077
+[INFO ][20151230 17:12:41,131][AbstractApplicationContext:1042] Closing Root WebApplicationContext: startup date [Wed Dec 30 17:12:21 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:12:41,132][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@db4077: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,coreEventDispatcher,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:12:41,403][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:12:41,511][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:12:41 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:12:41,594][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:12:42,072][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:12:42,120][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c7a853: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,coreEventDispatcher,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:12:42,215][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 17:12:42,272][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[WARN ][20151230 17:12:42,274][ActiveManagementCoordinator:77] A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[INFO ][20151230 17:12:42,535][ContextLoader:313] Root WebApplicationContext: initialization completed in 1130 ms
+[INFO ][20151230 17:12:42,615][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 17:12:42,622][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:12:42 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:12:42,624][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:12:48,363][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:12:48,543][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:12:48 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:12:48,658][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:12:49,339][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:12:49,415][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1677970: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,coreEventDispatcher,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:12:49,537][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 17:12:50,172][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 17:12:50,490][ContextLoader:313] Root WebApplicationContext: initialization completed in 2122 ms
+[INFO ][20151230 17:12:50,587][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 17:12:50,592][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:12:50 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:12:50,594][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:12:50,689][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:12:50,704][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19d0e89: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,coreEventDispatcher,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1677970
+[INFO ][20151230 17:12:50,876][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 17:12:50,877][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 17:12:50,877][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 17:12:51,166][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 579 ms
+[INFO ][20151230 17:12:53,664][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v6vph2d4g2i0|1703b9b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v6vph2d4g2i0|1703b9b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151230 17:12:54,285][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@970ecc)
+[INFO ][20151230 17:12:54,378][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@14a48e7)
+[INFO ][20151230 17:12:54,422][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@1130723)
+[INFO ][20151230 17:12:54,425][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@144500b)
+[INFO ][20151230 17:13:50,825][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151230 17:13:50,960][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Wed Dec 30 17:13:50 CST 2015]; root of context hierarchy
+[INFO ][20151230 17:13:51,050][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:13:51,644][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:13:51,727][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fb0fc2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,com.spring.event.AccountEventListener#0,coreEventDispatcher,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151230 17:13:51,922][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151230 17:13:52,613][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151230 17:13:53,144][ContextLoader:313] Root WebApplicationContext: initialization completed in 2315 ms
+[INFO ][20151230 17:13:53,243][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151230 17:13:53,250][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Wed Dec 30 17:13:53 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151230 17:13:53,252][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151230 17:13:53,339][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151230 17:13:53,353][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7b3555: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,com.spring.event.AccountEventListener#0,coreEventDispatcher,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1fb0fc2
+[INFO ][20151230 17:13:53,509][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151230 17:13:53,510][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151230 17:13:53,511][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151230 17:13:53,793][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 549 ms
+[INFO ][20151230 17:13:57,384][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2ukyh49d1v6x1mb75l9cn|d8c8a9, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2ukyh49d1v6x1mb75l9cn|d8c8a9, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151230 17:13:57,976][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@3e2405)
+[INFO ][20151230 17:13:57,982][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@12a9621)
+[INFO ][20151230 17:13:58,045][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@1bd2e90)
+[INFO ][20151230 17:13:58,047][CoreEventDispatcher:56] publish an event(com.spring.event.AccountEvent@128deae)

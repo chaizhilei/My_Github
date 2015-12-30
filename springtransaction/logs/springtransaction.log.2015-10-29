@@ -1,0 +1,878 @@
+[INFO ][20151029 09:58:21,584][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 09:58:22,007][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 09:58:22 CST 2015]; root of context hierarchy
+[INFO ][20151029 09:58:22,215][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 09:58:23,347][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 09:58:23,426][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1301b94: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+[INFO ][20151029 09:58:23,553][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 09:58:24,480][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 09:58:24,927][ContextLoader:313] Root WebApplicationContext: initialization completed in 3328 ms
+[INFO ][20151029 09:58:25,237][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 09:58:25,243][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 09:58:25 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 09:58:25,244][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 09:58:25,310][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 09:58:25,318][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1719660: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1301b94
+[INFO ][20151029 09:58:26,032][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 794 ms
+[WARN ][20151029 09:59:37,659][DispatcherServlet:1108] No mapping found for HTTP request with URI [/springtransaction/test/account/trans] in DispatcherServlet with name 'spring'
+[WARN ][20151029 10:00:12,530][DispatcherServlet:1108] No mapping found for HTTP request with URI [/springtransaction/index] in DispatcherServlet with name 'spring'
+[WARN ][20151029 10:00:45,300][DispatcherServlet:1108] No mapping found for HTTP request with URI [/springtransaction/test/account] in DispatcherServlet with name 'spring'
+[INFO ][20151029 10:02:43,886][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:02:44,097][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:02:44 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:02:44,202][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:02:44,876][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:02:44,964][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:02:45,056][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:02:45,625][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:02:46,132][ContextLoader:313] Root WebApplicationContext: initialization completed in 2241 ms
+[INFO ][20151029 10:02:46,223][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:02:46,228][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:02:46 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:02:46,230][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:02:46,310][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:02:46,322][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ec1758: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace
+[INFO ][20151029 10:02:46,461][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:02:46,461][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:02:46,462][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:02:46,824][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 600 ms
+[WARN ][20151029 10:02:56,569][DispatcherServlet:1108] No mapping found for HTTP request with URI [/springtransaction/test/account] in DispatcherServlet with name 'spring'
+[INFO ][20151029 10:03:02,075][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d7bv8x11bqsph|44e905, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d7bv8x11bqsph|44e905, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:05:44,563][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:05:44,693][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:05:44 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:05:44,785][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:05:45,322][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:05:45,386][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:05:45,477][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:05:45,998][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:05:46,394][ContextLoader:313] Root WebApplicationContext: initialization completed in 1827 ms
+[INFO ][20151029 10:05:46,486][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:05:46,491][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:05:46 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:05:46,493][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:05:46,574][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:05:46,587][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1102445: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 10:05:46,732][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:05:46,733][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:05:46,733][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:05:46,960][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 474 ms
+[INFO ][20151029 10:05:52,843][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d7fqgm5u6jjc|136ba9b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d7fqgm5u6jjc|136ba9b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:06:35,946][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:06:36,078][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:06:36 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:06:36,174][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:06:36,719][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:06:36,778][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:06:36,909][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:06:37,428][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:06:37,829][ContextLoader:313] Root WebApplicationContext: initialization completed in 1879 ms
+[INFO ][20151029 10:06:37,917][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:06:37,922][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:06:37 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:06:37,923][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:06:38,001][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:06:38,015][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1db4075: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace
+[INFO ][20151029 10:06:38,148][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:06:38,148][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:06:38,149][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:06:38,372][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 455 ms
+[INFO ][20151029 10:06:43,597][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d7gu5d1acx5ta|24d938, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d7gu5d1acx5ta|24d938, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:07:59,075][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:07:59,212][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:07:59 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:07:59,310][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:07:59,967][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:08:00,050][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:08:00,154][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:08:00,672][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:08:01,047][ContextLoader:313] Root WebApplicationContext: initialization completed in 1968 ms
+[INFO ][20151029 10:08:01,133][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:08:01,138][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:08:01 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:08:01,140][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:08:01,222][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:08:01,236][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a881f5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 10:08:01,378][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:08:01,379][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:08:01,379][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:08:01,607][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 473 ms
+[INFO ][20151029 10:08:09,938][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d7imdo16oyg0w|13229a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d7imdo16oyg0w|13229a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:20:30,877][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:20:31,018][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:20:31 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:20:31,115][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:20:31,747][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:20:31,809][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:20:31,904][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:20:32,428][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:20:32,675][ContextLoader:313] Root WebApplicationContext: initialization completed in 1793 ms
+[INFO ][20151029 10:20:32,773][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:20:32,780][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:20:32 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:20:32,782][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:20:32,855][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:20:32,867][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1cf1c23: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 10:20:33,003][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:20:33,004][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:20:33,004][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:20:33,317][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 544 ms
+[INFO ][20151029 10:20:38,342][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d7yqfp1wdjhpc|d662dc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d7yqfp1wdjhpc|d662dc, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:21:39,309][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:21:39,495][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:21:39 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:21:39,595][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:21:40,176][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:21:40,235][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:21:40,326][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:21:40,844][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:21:41,230][ContextLoader:313] Root WebApplicationContext: initialization completed in 1913 ms
+[INFO ][20151029 10:21:41,352][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:21:41,360][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:21:41 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:21:41,362][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:21:41,446][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:21:41,458][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1102445: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 10:21:41,599][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:21:41,599][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:21:41,600][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:21:41,826][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 474 ms
+[INFO ][20151029 10:21:56,470][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d8078c1bhwt1y|136ba9b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d8078c1bhwt1y|136ba9b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:22:42,955][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:22:43,084][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:22:43 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:22:43,182][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:22:43,857][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:22:43,941][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@162d74e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:22:44,041][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:22:44,601][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:22:44,843][ContextLoader:313] Root WebApplicationContext: initialization completed in 1884 ms
+[INFO ][20151029 10:22:44,941][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:22:44,947][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:22:44 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:22:44,949][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:22:45,023][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:22:45,035][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@85c10: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@162d74e
+[INFO ][20151029 10:22:45,165][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:22:45,166][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:22:45,166][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:22:45,388][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 447 ms
+[INFO ][20151029 10:22:49,845][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d81ke31fl27g3|183a9a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d81ke31fl27g3|183a9a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:25:31,915][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:25:32,045][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:25:32 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:25:32,140][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:25:32,684][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:25:32,746][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:25:32,837][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:25:33,358][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:25:33,739][ContextLoader:313] Root WebApplicationContext: initialization completed in 1820 ms
+[INFO ][20151029 10:25:33,826][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:25:33,832][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:25:33 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:25:33,833][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:25:33,916][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:25:33,930][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a881f5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 10:25:34,070][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:25:34,071][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:25:34,071][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:25:34,298][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 471 ms
+[INFO ][20151029 10:25:38,310][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d856my1yonp24|13229a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d856my1yonp24|13229a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 10:50:00,358][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 10:50:00,539][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 10:50:00 CST 2015]; root of context hierarchy
+[INFO ][20151029 10:50:00,652][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:50:01,221][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:50:01,281][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 10:50:01,378][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 10:50:01,907][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 10:50:02,156][ContextLoader:313] Root WebApplicationContext: initialization completed in 1793 ms
+[INFO ][20151029 10:50:02,294][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 10:50:02,299][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:50:02 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 10:50:02,301][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 10:50:02,382][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 10:50:02,395][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e485bd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 10:50:02,533][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 10:50:02,533][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 10:50:02,534][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 10:50:02,771][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 476 ms
+[INFO ][20151029 10:50:09,699][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d90nrrgoinof|1212168, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d90nrrgoinof|1212168, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 11:03:34,765][AbstractApplicationContext:1042] Closing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 10:50:02 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:03:34,767][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e485bd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 11:03:34,790][AbstractApplicationContext:1042] Closing Root WebApplicationContext: startup date [Thu Oct 29 10:50:00 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:03:34,791][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:03:35,087][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:03:35,201][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:03:35 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:03:35,282][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:03:35,763][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:03:35,828][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18ba3d: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:03:35,931][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:03:36,012][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[WARN ][20151029 11:03:36,015][ActiveManagementCoordinator:77] A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[INFO ][20151029 11:03:36,252][ContextLoader:313] Root WebApplicationContext: initialization completed in 1162 ms
+[INFO ][20151029 11:03:36,326][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:03:36,332][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:03:36 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:03:36,333][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:03:36,409][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:03:36,432][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f96bbc: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@18ba3d
+[INFO ][20151029 11:03:36,586][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:03:36,586][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:03:36,587][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:03:36,731][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 405 ms
+[INFO ][20151029 11:05:10,015][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:05:10,168][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:05:10 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:05:10,280][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:05:10,860][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:05:10,943][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:05:11,152][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:05:11,694][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 11:05:11,950][ContextLoader:313] Root WebApplicationContext: initialization completed in 1930 ms
+[INFO ][20151029 11:05:12,093][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:05:12,099][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:05:12 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:05:12,101][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:05:12,181][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:05:12,196][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18394b0: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 11:05:12,361][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:05:12,362][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:05:12,362][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:05:12,637][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 543 ms
+[INFO ][20151029 11:05:21,188][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d9k5sd173vh1|1701ba3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d9k5sd173vh1|1701ba3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151029 11:05:21,814][AccountServiceImpl:42] 处理异常
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151029 11:06:04,393][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:06:04,530][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:06:04 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:06:04,628][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:06:05,283][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:06:05,348][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c06bf7: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:06:05,496][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:06:06,072][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 11:06:06,345][ContextLoader:313] Root WebApplicationContext: initialization completed in 1948 ms
+[INFO ][20151029 11:06:06,494][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:06:06,500][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:06:06 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:06:06,502][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:06:06,580][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:06:06,594][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@904ddd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c06bf7
+[INFO ][20151029 11:06:06,728][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:06:06,728][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:06:06,729][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:06:06,968][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 474 ms
+[INFO ][20151029 11:06:11,622][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d9lbpz12p36k2|bc4ce7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d9lbpz12p36k2|bc4ce7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151029 11:06:12,324][AccountServiceImpl:42] 处理异常
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[ERROR][20151029 11:06:45,030][AccountServiceImpl:42] 处理异常
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151029 11:07:53,743][AbstractApplicationContext:1042] Closing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:06:06 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:07:53,745][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@904ddd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c06bf7
+[INFO ][20151029 11:07:53,749][AbstractApplicationContext:1042] Closing Root WebApplicationContext: startup date [Thu Oct 29 11:06:04 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:07:53,750][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c06bf7: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:07:54,081][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:07:54,203][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:07:54 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:07:54,276][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:07:54,688][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:07:54,734][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2432eb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:07:54,832][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:07:54,886][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[WARN ][20151029 11:07:54,888][ActiveManagementCoordinator:77] A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[INFO ][20151029 11:07:55,067][ContextLoader:313] Root WebApplicationContext: initialization completed in 983 ms
+[INFO ][20151029 11:07:55,125][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:07:55,131][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:07:55 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:07:55,133][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:07:55,207][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:07:55,220][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@188b12b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@2432eb
+[INFO ][20151029 11:07:55,361][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:07:55,362][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:07:55,362][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:07:55,532][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 406 ms
+[INFO ][20151029 11:09:08,621][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:09:08,768][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:09:08 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:09:08,875][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:09:09,522][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:09:09,590][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:09:09,734][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:09:10,314][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 11:09:10,611][ContextLoader:313] Root WebApplicationContext: initialization completed in 1986 ms
+[INFO ][20151029 11:09:10,743][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:09:10,750][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:09:10 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:09:10,752][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:09:10,862][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:09:10,876][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@387103: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace
+[INFO ][20151029 11:09:11,063][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:09:11,064][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:09:11,064][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:09:11,374][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 630 ms
+[INFO ][20151029 11:09:15,653][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d9p9uqz5mv1m|f8d139, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d9p9uqz5mv1m|f8d139, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[INFO ][20151029 11:14:13,002][AbstractApplicationContext:1042] Closing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:09:10 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:14:13,003][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@387103: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace
+[INFO ][20151029 11:14:13,009][AbstractApplicationContext:1042] Closing Root WebApplicationContext: startup date [Thu Oct 29 11:09:08 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:14:13,009][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:14:13,333][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:14:13,445][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:14:13 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:14:13,527][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:14:14,039][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:14:14,088][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9795ef: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:14:14,188][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:14:14,249][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[WARN ][20151029 11:14:14,252][ActiveManagementCoordinator:77] A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[INFO ][20151029 11:14:14,441][ContextLoader:313] Root WebApplicationContext: initialization completed in 1105 ms
+[INFO ][20151029 11:14:14,495][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:14:14,500][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:14:14 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:14:14,501][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:14:14,566][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:14:14,579][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ed15da: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@9795ef
+[INFO ][20151029 11:14:14,716][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:14:14,716][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:14:14,717][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:14:14,872][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 376 ms
+[INFO ][20151029 11:15:19,636][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:15:19,780][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:15:19 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:15:19,880][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:15:20,457][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:15:20,522][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:15:20,634][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:15:21,194][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 11:15:21,446][ContextLoader:313] Root WebApplicationContext: initialization completed in 1803 ms
+[INFO ][20151029 11:15:21,548][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:15:21,559][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:15:21 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:15:21,561][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:15:21,653][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:15:21,669][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e7f8de: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@63aace
+[INFO ][20151029 11:15:21,812][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:15:21,812][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:15:21,813][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:15:22,134][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 585 ms
+[INFO ][20151029 11:15:29,225][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d9x81y1i0xs4u|5d003b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d9x81y1i0xs4u|5d003b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151029 11:15:29,821][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151029 11:16:06,782][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:16:06,981][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:16:06 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:16:07,074][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:16:07,749][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:16:07,812][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@162d74e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:16:07,919][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:16:08,451][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 11:16:08,704][ContextLoader:313] Root WebApplicationContext: initialization completed in 1918 ms
+[INFO ][20151029 11:16:08,803][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:16:08,810][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:16:08 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:16:08,812][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:16:08,887][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:16:08,899][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@387103: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@162d74e
+[INFO ][20151029 11:16:09,039][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:16:09,039][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:16:09,040][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:16:09,303][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 500 ms
+[INFO ][20151029 11:16:13,457][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d9y8j09gy678|f8d139, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d9y8j09gy678|f8d139, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151029 11:16:14,032][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[ERROR][20151029 11:16:14,078][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[ERROR][20151029 11:16:29,401][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[ERROR][20151029 11:16:29,469][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151029 11:17:00,191][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:17:00,330][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:17:00 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:17:00,428][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:17:01,014][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:17:01,079][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:17:01,189][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:17:01,731][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 11:17:01,987][ContextLoader:313] Root WebApplicationContext: initialization completed in 1791 ms
+[INFO ][20151029 11:17:02,092][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:17:02,098][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:17:02 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:17:02,100][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:17:02,178][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:17:02,190][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@904ddd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 11:17:02,332][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:17:02,332][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:17:02,333][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:17:02,561][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 468 ms
+[INFO ][20151029 11:17:08,174][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1d9zdn2dcni3h|bc4ce7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1d9zdn2dcni3h|bc4ce7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151029 11:17:08,774][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[ERROR][20151029 11:17:08,823][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+[INFO ][20151029 11:18:16,673][ContextLoader:273] Root WebApplicationContext: initialization started
+[INFO ][20151029 11:18:16,818][AbstractApplicationContext:510] Refreshing Root WebApplicationContext: startup date [Thu Oct 29 11:18:16 CST 2015]; root of context hierarchy
+[INFO ][20151029 11:18:16,916][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:18:17,580][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:18:17,648][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20151029 11:18:17,766][MLog$1:124] MLog clients using log4j logging.
+[INFO ][20151029 11:18:18,338][C3P0Registry:248] Initializing c3p0-0.9.5-pre8 [built 04-April-2014 04:08:13 -0700; debug? true; trace: 10]
+[INFO ][20151029 11:18:18,586][ContextLoader:313] Root WebApplicationContext: initialization completed in 1908 ms
+[INFO ][20151029 11:18:18,686][FrameworkServlet:454] FrameworkServlet 'spring': initialization started
+[INFO ][20151029 11:18:18,693][AbstractApplicationContext:510] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Thu Oct 29 11:18:18 CST 2015]; parent: Root WebApplicationContext
+[INFO ][20151029 11:18:18,696][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring2.xml]
+[INFO ][20151029 11:18:18,777][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20151029 11:18:18,790][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@83e909: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#0,accountController,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,accountService,accountDao,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@f05ce8
+[INFO ][20151029 11:18:18,928][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans] onto handler 'accountController'
+[INFO ][20151029 11:18:18,929][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans.*] onto handler 'accountController'
+[INFO ][20151029 11:18:18,929][AbstractUrlHandlerMapping:315] Mapped URL path [/test/account/trans/] onto handler 'accountController'
+[INFO ][20151029 11:18:19,180][FrameworkServlet:473] FrameworkServlet 'spring': initialization completed in 493 ms
+[INFO ][20151029 11:18:22,909][AbstractPoolBackedDataSource:522] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2xih4r9c1da10ql13swxmz|1ba21ac, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> 2xih4r9c1da10ql13swxmz|1ba21ac, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+[ERROR][20151029 11:18:23,496][AccountServiceImpl:42] 出错了
+java.lang.ArithmeticException: / by zero
+	at com.spring.demo2.AccountServiceImpl.transfer(AccountServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy12.transfer(Unknown Source)
+	at com.spring.demo2.AccountController.transferMoney(AccountController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:440)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:428)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)

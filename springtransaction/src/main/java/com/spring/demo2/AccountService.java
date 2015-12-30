@@ -13,5 +13,6 @@ public interface AccountService {
 	 * @param money
 	 *            转账金额
 	 */
-	public void transfer(String out, String in, Double money);
+	public void transfer(String out, String in, Double money) throws Exception; 
+	
 }
